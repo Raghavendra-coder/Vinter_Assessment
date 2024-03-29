@@ -1,3 +1,5 @@
+Constructing a Health and Prosperity Index for US States
+
 **part - 2 : How to run the project**
 1. Clone the project in your local using git clone https://github.com/Raghavendra-coder/Vinter_Assessment.git
 2. Start your docker server.
@@ -34,8 +36,6 @@ USA may make in their datasets. (**part-2 point 3 covered here**)
 8. SQL (ORMs)
 
 
-
-Constructing a Health and Prosperity Index for US States
 **Part - 1**
 1. The variables selected for the Health and Prosperity Index are:
 
