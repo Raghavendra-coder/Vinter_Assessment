@@ -59,10 +59,12 @@ USA may make in their datasets. (**part-2 point 3 covered here**)
 **Technologies used in this project**
 1. python
 2. Database Designing
-3. Docker
-4. Github
-5. Bash
-6. Django
-7. Streamlight
-8. SQL (ORMs)
+3. Django
+4. Docker
+5. Github
+6. Bash
+7. Celery
+8. Celery Beats(for async tasks)
+9. Streamlight
+10. SQL (ORMs)
 
