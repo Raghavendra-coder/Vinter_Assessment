@@ -40,6 +40,10 @@
 6. When the build will be completed (you will see )
 7. After that open 0.0.0.0:8502(the port used by main streamlit).
 8. If the data is not updated, you will see it getting updated; if it is already updated you will see the health-prosperity-index every year.
+9. If you want to run the project on your local system then : 
+  I) Change the directory to Vinter_Assessment.
+  II) run the command "pip3 install -r requirements.txt"
+  III) then run the command "streamlit run streamlit_file.py" which will direct you to the streamlit server and will open the Index Graph and data table
 
 
 
