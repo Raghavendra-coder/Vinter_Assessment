@@ -145,7 +145,7 @@ CELERY_TIMEZONE = 'UTC'
 CELERY_BEAT_SCHEDULE = {
         'task-first': {
             'task': 'main_index_app.tasks.daily_update_data',
-            # 'schedule': crontab(minute=0, hour=0) #update everyday at 00:00 utc
-            'schedule': timedelta(seconds=120)
+            'schedule': crontab(hour=14, minute=30) #update everyday at 00:00 utc
+            # 'schedule': timedelta(seconds=120)
         }
 }
