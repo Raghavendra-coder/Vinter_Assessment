@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-dnfh2^0f6ykegpcy%y%k^v*@8nu75=tg=z!ei1a3c5g7ks8w1&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["0.0.0.0"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -145,7 +145,7 @@ CELERY_TIMEZONE = 'UTC'
 CELERY_BEAT_SCHEDULE = {
         'task-first': {
             'task': 'main_index_app.tasks.daily_update_data',
-            'schedule': crontab(minute=0, hour=0) #update everyday at 00:00 utc
-            # 'schedule': timedelta(seconds=5)
+            # 'schedule': crontab(minute=0, hour=0) #update everyday at 00:00 utc
+            'schedule': timedelta(seconds=120)
         }
 }

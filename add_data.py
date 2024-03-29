@@ -12,11 +12,12 @@ from main_index_app.models import HealthProsperityIndexData
 
 def insert_data(field_name, data: dict = dict()):
     for key, value in data.items():
-        try:
-            instance = HealthProsperityIndexData.objects.get(year=key)
+        instance = HealthProsperityIndexData.objects.filter(year=key).first()
+        if instance:
             setattr(instance, field_name, value)
-        except HealthProsperityIndexData.DoesNotExist:
-            instance = HealthProsperityIndexData(**{"year": key, field_name: value})
+        else:
+           instance = HealthProsperityIndexData(**{"year": key, field_name: value})
+        
         instance.save()
 
 
